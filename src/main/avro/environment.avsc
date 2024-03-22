@@ -1,0 +1,30 @@
+{
+  "namespace": "com.rebirth.cyberplanta.commons.avro.model",
+  "type": "record",
+  "name": "EnvironmentalMeasurementAvroDTO",
+  "fields": [
+    {
+      "type": "float",
+      "name": "temperature"
+    },
+    {
+      "type": "float",
+      "name": "humidity"
+    },
+    {
+      "type": {
+        "type": "enum",
+        "name": "InnerTemperatureUnit",
+        "symbols": [
+          "CELSIUS",
+          "FAHRENHEIT"
+        ]
+      },
+      "name": "temperatureUnit"
+    },
+    {
+      "type": "long",
+      "name": "timestamp"
+    }
+  ]
+}
