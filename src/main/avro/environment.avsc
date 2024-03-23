@@ -1,17 +1,30 @@
 {
-  "namespace": "com.rebirth.cyberplanta.commons.avro.model",
   "type": "record",
   "name": "EnvironmentalMeasurementAvroDTO",
+  "namespace": "com.rebirth.cyberplanta.commons.avro.model",
   "fields": [
     {
-      "type": "float",
-      "name": "temperature"
+      "name": "heatIndex",
+      "type": "float"
     },
     {
-      "type": "float",
-      "name": "humidity"
+      "name": "humidity",
+      "type": "float"
     },
     {
+      "name": "observation",
+      "type": "string"
+    },
+    {
+      "name": "soilMoisture",
+      "type": "float"
+    },
+    {
+      "name": "temperature",
+      "type": "float"
+    },
+    {
+      "name": "temperatureUnit",
       "type": {
         "type": "enum",
         "name": "InnerTemperatureUnit",
@@ -19,12 +32,11 @@
           "CELSIUS",
           "FAHRENHEIT"
         ]
-      },
-      "name": "temperatureUnit"
+      }
     },
     {
-      "type": "long",
-      "name": "timestamp"
+      "name": "timestamp",
+      "type": "long"
     }
   ]
 }

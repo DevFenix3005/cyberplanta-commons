@@ -17,9 +17,15 @@ public final class EnvironmentalMeasurement implements Serializable {
     @Id
     private String id;
 
-    private Float temperature;
+    private Float heatIndex;
 
     private Float humidity;
+
+    private String observation;
+
+    private Float soilMoisture;
+
+    private Float temperature;
 
     private TemperatureUnit temperatureUnit;
 

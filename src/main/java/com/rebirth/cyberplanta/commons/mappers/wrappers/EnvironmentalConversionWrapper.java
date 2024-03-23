@@ -15,12 +15,25 @@ public class EnvironmentalConversionWrapper {
     }
 
     public record Target(EnvironmentalMeasurementAvroDTO environmentalMeasurementAvroDTO) {
-        public float getTemperature() {
-            return environmentalMeasurementAvroDTO.getTemperature();
+
+        public float getHeatIndex() {
+            return environmentalMeasurementAvroDTO.getHeatIndex();
         }
 
         public float getHumidity() {
             return environmentalMeasurementAvroDTO.getHumidity();
+        }
+
+        public String getObservation() {
+            return environmentalMeasurementAvroDTO.getObservation();
+        }
+
+        public float getSoilMoisture() {
+            return environmentalMeasurementAvroDTO.getSoilMoisture();
+        }
+
+        public float getTemperature() {
+            return environmentalMeasurementAvroDTO.getTemperature();
         }
 
         public InnerTemperatureUnit getTemperatureUnit() {
